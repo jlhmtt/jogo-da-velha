@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Jogo da Velha</title>
+</head>
+
+<body>
+  <header>
+    <h1>Jogo da Velha</h1>
+    <h2>Jogadore da vez: <span id="sJogadorDaVez">X</span></h2>
+    <div id="resultado"></div>
+  </header>
+
+  <main>
+    <div class="tile_row" id="LinhaTopo">
+      <span class="tile" id="TopoEsquerda" onclick="clique(1)"></span>
+      <span class="tile" id="TopoMeio" onclick="clique(2)"></span>
+      <span class="tile" id="TopoDireita" onclick="clique(3)"></span>
+    </div>
+    <div class="tile_row" id="LinhaMeio">
+      <span class="tile" id="MeioEsquerda" onclick="clique(4)"></span>
+      <span class="tile" id="MeioMeio" onclick="clique(5)"></span>
+      <span class="tile" id="MeioDireita" onclick="clique(6)"></span>
+    </div>
+    <div class="tile_row" id="LinhaBaixo">
+      <span class="tile" id="BaixoEsquerda" onclick="clique(7)"></span>
+      <span class="tile" id="BaixoMeio" onclick="clique(8)"></span>
+      <span class="tile" id="BaixoDireita" onclick="clique(9)"></span>
+    </div>
+
+    <button id="reset" onclick="reset()">RESET</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
